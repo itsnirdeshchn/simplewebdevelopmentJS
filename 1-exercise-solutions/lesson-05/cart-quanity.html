@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart quantity</title>
+</head>
+<body>
+    
+    <button onclick="
+        console.log(`Your total Cart quantity is: ${cartquantity}`);
+        ">Show Quantity</button>
+        <!-- Here I have use backtick ` button which is used to write in text to give values inside text box.  -->
+
+    <button onclick="
+        cartquantity=cartquantity + 1;
+        console.log(`Cart quantity: ${cartquantity}`)
+    ">Add to Cart</button>
+
+    <!-- Here we have added the cart counter to the button -->
+
+
+    <button onclick="
+        cartquantity=cartquantity+2;
+        console.log(`Cart quantity: ${cartquantity}`)
+    ">+2</button>
+    <!-- Here when we click this button then the counter is added with number 2 -->
+
+    <button onclick="
+        cartquantity=cartquantity+3;
+        console.log(`cartquantity: ${cartquantity}`);
+
+    ">+3</button>
+    <!-- Here when we click this button then the counter is added with number 3 -->
+
+
+    <button onclick="
+        cartquantity=0;
+        console.log(`Your cart counter is reset. And the total item in cart is ${cartquantity}`);
+    ">Reset Cart</button>
+    <!-- Here when the user click this button then the couter is reset to the default value of cart counter which is 0. -->
+
+
+    <script>
+        let cartquantity=0;
+    </script>
+
+    <!-- Ok so I am updating this text just to update the first commit using ammend command -->
+
+</body>
+</html>
