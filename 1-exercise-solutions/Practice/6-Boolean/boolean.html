@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body>
+    <script>
+
+
+        // <= less than or equal to
+        // === equal to
+        // !== not equal to
+
+        console.log (3 < 5);
+        console.log (3 !== `3`);
+
+
+
+        if (false) {
+            console.log('hello');
+        } else {
+            console.log('Else');
+        }
+
+
+        if (12 >= 16){
+            console.log(`You are eligible to drive a car`);
+
+        } else {
+            console.log('You can not drive a car');
+        }
+
+
+        console.log(false && true);
+        console.log(0.2>=0 && 0.2<(1/3));
+        // And operator
+
+
+        console.log(false || false);
+        // Or operator
+
+        console.log(!false);
+        // Not operator
+
+
+
+        if (NaN,0,null) {
+            console.log('Truthy Value');
+        }
+        // Values such as `false,, '0', Nan, undefined, null are falsy value where the condition is not met and will not perform.
+        // Similarly all the other numbers are truthy value.
+
+        // Use case of above idea
+
+        const cartQuantity =5;
+
+        if (cartQuantity) {
+            console.log('Cart has the product.')
+        }
+
+        
+
+        // Ternary Operator ?: acts as an if statement
+
+        let ternaryOperator= true ? 'Ternary operator returns truthy' : 'Ternary operator returns falsy' ;
+        console.log(ternaryOperator);
+
+
+
+
+        
+
+
+        // Guard operator and Or Operator are the shortcut for using truthy value and falsy value.
+
+        // Guard operator &&
+
+        let message = 'Harry' && 'Alex';
+        // When the value on left is false then the conditions ends then and there and doesnot bother processing the other conditions.
+
+        console.log(message);
+
+
+
+        // OR Operator ||
+
+        // When the value on left is true then the conditions ends then and there and doesnot bother processing the other conditions.
+
+        let orOperator= 'Ram' || 'Shyam';
+        // Here the or operator stopped when the first condition is true which is RAM and it is not a falsy value so it is truthy value and so the circuit is completed and stopped there.
+        console.log(orOperator);
+        // Similarly
+
+        let orOperator1= 0 || 'Shyam';
+        console.log(orOperator1);
+        // Here the 0 is the falsy value and the circuit doesn't stop there and hence it goes to other value which is true and so it is stored in orOperator1 variable.
+
+
+    </script>
+
+
+
+</body>
+</html>
