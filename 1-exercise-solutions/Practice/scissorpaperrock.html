@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, scissor and paper</title>
+</head>
+<body>
+   
+        <p>
+            Rock Scissor & Paper
+        </p>
+        
+        <button onclick="
+
+            let computerMove='';
+            // Here we create the variable outside the scope (variable inside {} ) is a scope and  not accessible outside the scope. So, we create variable outside so that we can print at the last using this variable.
+
+            // Var doesnot follow the rule of scope.
+            
+
+            randomNumber=Math.random();
+
+            if (randomNumber >= 0 && randomNumber < 1/3) {
+                computerMove='Rock';
+            } else if  (randomNumber>=1/3 && randomNumber<2/3){
+                computerMove='Paper';
+            }
+            else if (randomNumber>=2/3 && randomNumber<1 ) {
+                computerMove='Scissor';
+            }
+            console.log(computerMove);
+
+            let result = '';
+
+
+            if (computerMove === 'Rock' ) {
+                result='Tie';
+            } else if (computerMove ==='Paper') {
+                result='You Loose';
+            } else if (computerMove ==='Scissor') {
+                result='Win';
+            }
+            
+            alert(`You picked Rock. Computer picked ${computerMove}. ${result}`);
+
+        ">Rock</button>
+
+        <button onclick="
+        
+        
+            let computerMove='';
+            
+                randomNumber=Math.random();
+
+                if (randomNumber >= 0 && randomNumber < 1/3) {
+                    computerMove='Rock';
+                } else if  (randomNumber>=1/3 && randomNumber<2/3){
+                    computerMove='Paper';
+                }
+                else if (randomNumber>=2/3 && randomNumber<1 ) {
+                    computerMove='Scissor';
+                }
+                console.log(computerMove);
+
+                let result = '';
+
+
+                if (computerMove === 'Rock' ) {
+                    result='Loose';
+                } else if (computerMove ==='Paper') {
+                    result='Win';
+                } else if (computerMove ==='Scissor') {
+                    result='Tie';
+                }
+                
+                alert(`You picked Scissor. Computer picked ${computerMove}. ${result}`);
+
+        
+        
+        ">Scissor</button>
+        <button onclick="
+        
+                let computerMove='';
+            
+                randomNumber=Math.random();
+
+                if (randomNumber >= 0 && randomNumber < 1/3) {
+                    computerMove='Rock';
+                } else if  (randomNumber>=1/3 && randomNumber<2/3){
+                    computerMove='Paper';
+                }
+                else if (randomNumber>=2/3 && randomNumber<1 ) {
+                    computerMove='Scissor';
+                }
+                console.log(computerMove);
+
+                let result = '';
+
+
+                if (computerMove === 'Rock' ) {
+                    result='Win';
+                } else if (computerMove ==='Paper') {
+                    result='Tie';
+                } else if (computerMove ==='Scissor') {
+                    result='Loose';
+                }
+                
+                alert(`You picked Paper. Computer picked ${computerMove}. ${result}`);
+
+        
+        ">Paper</button>
+
+
+
+</body>
+</html>
